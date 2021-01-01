@@ -25,13 +25,14 @@ grid-template-columns: /*No 1*/ 1fr /*No 2*/ 2fr /*No 3*/ 1fr /*No 4*/; //here t
 ```
 
 ```css
-grid-template-columns: /*No 1*/ 1fr /*No 2*/ minmax(
-    0,
-    8.5in
-  ) /*No 3*/ 1fr /*No 4*/;
+grid-template-columns: /*No 1*/
+  1fr /*No 2*/ minmax(0, 8.5in)
+  /*No 3*/ 1fr /*No 4*/;
 grid-column: 2/3; /*this is using the above number values*/
 ```
 
 Explanation: the above code will create 3 columns with minmax(0,8.5in) this means if the screen is equal to the 8.5in or less than it will just show the only minmax() specified column and it will remove the column which 1fr columns from both the sides.
 
 learn minmax() of css.
+
+learn about :not(:last-child)
