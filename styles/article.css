@@ -1,0 +1,24 @@
+article {
+    /* instead of minmax we can use directly media query grid-template-columns: 1fr 0.5in [start]minmax(0, 7.5in)[end] 0.5in 1fr;  */
+    /*we can use the start and end like variable instead of counting the place and changing again and again*/
+
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
+
+    height: 100vh;
+    /* temp fix */
+
+    padding: 0.5in 0;
+}
+
+article * {
+    /* grid-column: 2 / 3; instead of using values we can use the give names like start and end. if we use number we need to count them again and again this may cause error if we miss number */
+
+    grid-column: start / end;
+}
+
+@media (max-width: 8.5in) {
+    article {
+        grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+    }
+}
