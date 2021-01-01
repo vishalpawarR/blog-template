@@ -6,6 +6,8 @@ body * {
 
 .debug-center {
     display: flex;
-    justify-content: center; /* to align horizontally */
-    align-items: center; /* To align vertically*/
+    justify-content: center;
+    /* to align horizontally */
+    align-items: center;
+    /* To align vertically*/
 }
